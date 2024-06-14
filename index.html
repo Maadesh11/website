@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeNavbar</title>
+    
+    
+  
+    
+    <style>
+       
+       
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #636568;
+    }
+    
+    header {
+        background-color: #232f3e;
+        padding: 10px 20px;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-item img{
+        width: 25px;
+        border-radius: 50%;
+    }
+     
+    .dropdown li a {
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown li a:hover {
+        background-color: #7a7373;
+    }
+    input:hover {
+        background-color: #f9cbcb;
+    }
+    
+    .nav-item:hover .dropdown {
+        display: block;
+    }
+    
+    .logo {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+      
+        margin-bottom: 14px;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-item {
+        position: relative;
+    }
+    
+    .nav-item > a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+    }
+    
+    .nav-item > a:hover {
+        background-color: #37475a;
+    }
+    
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+         z-index: 1;
+        min-width: 200px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .dropdown li {
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+   .pro img{
+    width: 250px;
+    margin-top: 15px;
+   margin-right: 100px;
+   padding-left: 98px;
+   transition-timing-function: ease-in-out;
+
+   }
+   .pro2 img{
+    width: 250px;
+    margin-top: 15px;
+   margin-right: 100px;
+   padding-left: 98px;
+   padding-bottom: 400px;
+}
+   
+   .pro1 img{
+    width: 250px;
+    height: 350px;
+    margin-left: 100px;
+
+  
+    
+   }
+   .pro img:hover{
+    height: 430px;
+     width: 300px;}
+   .pro1 img:hover{
+    height: 380px;
+     width: 270px;
+   }
+   .pro2 img:hover{
+    height: 350px;
+   
+   }
+   fieldset {
+    /* text-align: center; */
+    height: 380px;
+    /* width: 300px; */
+    border: #232f3e solid 10px;
+    /* padding: 0px;
+    margin: 0px; */
+    padding-bottom: 80px;
+    padding-left: 700px;
+    padding-right: 400px;
+    /* margin-left: 300px; */
+    margin-top: 20px;
+    
+   }
+   .footer{
+    border: #232f3e solid 10px;
+   
+   }
+   
+ 
+   
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Prime video</a>
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="#">Home</a>
+                    <ul class="dropdown">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                       
+                    </ul>
+                </li>
+               
+                    <li class="nav-item">
+                    <a href="#">Store</a>
+                    <ul class="dropdown">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Rent</a></li>
+                        <li><a href="#">Channels</a></li>
+                       
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Live Tv</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Categories</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">My Stuff</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Watchlist</a></li>
+                        <li><a href="#">Purchases</a></li>
+                        <li><a href="#">Watch History</a></li>
+                    </ul>
+                </li>
+                
+             <!-- <label for=""></label> -->
+             <input list="search" required placeholder="search ">
+                
+                <li class="nav-item">
+                    <a href="#"><img src="search.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Try for free</a>
+                   
+                </li>
+                <li class="nav-item">
+                    <a href="#">EN</a>
+                    <ul class="dropdown">
+                        <li><a href="telugu.html">Telugu</a></li>
+                        <li><a href="#">Hidi</a></li>
+                        <li><a href="#">Tamil</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Malayam</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><img src="signin.png" alt=""></a>
+                    <ul class="dropdown">
+                        <li><a href="create account.html">Sign In</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+    <h1 >MOVIE SCROLLER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+    
+        
+        
+    <script>
+        let now=new Date;
+        //      document.write(now.getDate(),'-');
+        //  document.write(now.getMonth(),'-');
+        //  document.write(now.getFullYear(),"<br>");
+        //  document.write(now.getHours(),":");
+        //  document.write(now.getMinutes(),":");
+        //  document.write(now.getSeconds(),":");
+        //  document.write(now.getMilliseconds());
+         now.setDate(now.getMonth()+1);
+            document.write(now);
+        
+     </script>
+    </h1>
+    <form action="">
+        <center>
+    <fieldset class="">
+        <marquee behavior="" direction="right">
+       
+        
+        <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro2">
+            <img src="Guntur-Kaaram_1687502369.png" alt="photo">
+        </a>
+        <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro2">
+            <img src="virataparvam.jpg" alt="photo">
+        </a>
+        <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro2">
+            <img src="Bro-3.jpg" alt="photo">
+            <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro2">
+                <img src="pushpa.jpg" alt="photo">
+            </a>
+            <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro2">
+                <img src="vikram.jpg" alt="photo">
+            </a>
+            <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro2">
+                <img src="kgf.jpg" alt="photo">
+            </a>
+            <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro2">
+                <img src="18pages.jpg" alt="">
+            </a>
+       
+        </marquee>
+        </form>
+     </fieldset>
+    </center>
+   
+        <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro">
+            <img src="Guntur-Kaaram_1687502369.png" alt="photo">
+        </a>
+        <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro">
+            <img src="virataparvam.jpg" alt="photo">
+        </a>
+        <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro1">
+            <img src="Bro-3.jpg" alt="photo">
+        </a>
+        <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro">
+            <img src="pushpa.jpg" alt="photo">
+        </a>
+        <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro">
+            <img src="vikram.jpg" alt="photo">
+        </a>
+        <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro">
+            <img src="kgf.jpg" alt="photo">
+        </a>
+        <a href="WhatsApp Video 2023-11-24 at 4.14.27 PM.mp4" class="pro">
+            <img src="18pages.jpg" alt="">
+        </a>
+        <center>
+        
+        <form action="" class="footer">
+                <h1>PRIME VIDEO</h1>
+            <a href="termsandconditions.html" class="footer1"><h2>Termsandcoditions</h2></a>
+                <a href="create account.html"><h2>Send Us Feedback</h2></a>
+            <a href="">© 1996-2024, Amazon.com, Inc. or its affiliates</a>
+        </form>
+      </center>
+  
+</body>
+</html>
